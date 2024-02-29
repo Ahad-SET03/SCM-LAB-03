@@ -12,6 +12,6 @@ cout<<"The subtraction of two number is : "<<a-b<<endl;
 
 cout<<"The multiplication of two number is : "<<a*b<<endl;
 
-
+cout<<"The divison of two number is : "<<a/b<<endl;
 
 }
