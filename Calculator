@@ -10,7 +10,7 @@ cout<<"The addition of two number is : "<<a+b<<endl;
 
 cout<<"The subtraction of two number is : "<<a-b<<endl;
 
-
+cout<<"The multiplication of two number is : "<<a*b<<endl;
 
 
 
