@@ -6,11 +6,12 @@ int main ()
 cout<<"Name : Ahad Azeem Butt"<<endl;
 cout<<"Roll No. : SET-03 "<<endl;
 
+cout<<"The addition of two number is : "<<a+b<<endl;
 
+cout<<"The subtraction of two number is : "<<a-b<<endl;
 
+cout<<"The multiplication of two number is : "<<a*b<<endl;
 
-
-
-
+cout<<"The divison of two number is : "<<a/b<<endl;
 
 }
