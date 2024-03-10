@@ -1,0 +1,80 @@
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+// Function declarations
+double add(double x, double y);
+double subtract(double x, double y);
+double multiply(double x, double y);
+double divide(double x, double y);
+double exponent(double x, double y);
+double squareRoot(double x);
+
+int main() {
+    char operation;
+    double num1, num2;
+
+    // Prompt user for operation
+    cout << "Enter operation (+, -, *, /, ^, sqrt): ";
+    cin >> operation;
+
+    // Prompt user for numbers
+    cout << "Enter two numbers: ";
+    cin >> num1 >> num2;
+
+    // Perform operation based on user input
+    switch (operation) {
+        case '+':
+            cout << "Result: " << add(num1, num2);
+            break;
+        case '-':
+            cout << "Result: " << subtract(num1, num2);
+            break;
+        case '*':
+            cout << "Result: " << multiply(num1, num2);
+            break;
+        case '/':
+            if (num2 != 0)
+                cout << "Result: " << divide(num1, num2);
+            else
+                cout << "Error! Division by zero!";
+            break;
+        case '^':
+            cout << "Result: " << exponent(num1, num2);
+            break;
+        case 'sqrt':
+            cout << "Result: " << squareRoot(num1);
+            break;
+        default:
+            cout << "Invalid operation!";
+    }
+
+    return 0;
+}
+
+// Function definitions
+double add(double x, double y) {
+    return x + y;
+}
+
+double subtract(double x, double y) {
+    return x - y;
+}
+
+double multiply(double x, double y) {
+    return x * y;
+}
+
+double divide(double x, double y) {
+    return x / y;
+}
+
+double exponent(double x, double y) {
+    return pow(x, y);
+}
+
+double squareRoot(double x) {
+    return sqrt(x);
+}
